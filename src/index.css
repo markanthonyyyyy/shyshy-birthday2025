@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Courier Prime", monospace; */
+}
+
+.background-paper {
+  background-image: url(/background.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+@font-face {
+  font-family: "Aloja";
+  src: url("/Aloja-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Comic Relief";
+  src: url("/Comic-Relief.ttf") format("truetype");
+}
+
+.aloja-font {
+  font-family: "Aloja", Arial, Helvetica, sans-serif;
+}
+
+.comic-font {
+  font-family: "Comic Relief", Arial, Helvetica, sans-serif;
+}
+
+
+ @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out;
+}
+
+
+/* FOR MODAL */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: scale(0.7);
+  animation: bounce 0.6s ease-out forwards;
+}
+
+/* Keyframe for bounce effect */
+@keyframes bounce {
+  0% {
+    transform: scale(0.7);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  70% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
