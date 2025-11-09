@@ -2,16 +2,16 @@ import React, { useEffect, useState, useRef } from 'react'
 
 const Card2 = ({ onReturn }) => {
   const messages = [
-      "Selamat pagi sayang, semoga selalu semangat :)",
-      "Maaf ya kalau banyak salah ",
-      "Happy birthday cewe cantik, semoga panjang umur dan sehat selalu",
-      "Aku kangen kamu hehe",
-      "Hati hati di jalan yaa, jangan lupa sarapan biar kuat hehe",
-      "Hihihi Aku ganteng, Kamu Cantik",
-      "Your kindness spreads like the scent of flowers in the spring",
+      "Good day Mahal, I hope you're always motivated :)",
+      "Iloveyou forever and always lablab koo <3",
+      "Virtual flowers for my special girl :)",
+      "MAHAL NA MAHAL PO KITA SOBRA SOBRAAA",
+      "May all your dreams come truee lablabb",
+      "Happiest Birthday Mahal, enjoy your special day!!",
+      "Thank you for loving me every single day, Iloveyouuuu",
       "Just like flowers need sunlight, I need your smile to brighten my day",
-      "Ututut Capek ya jaga aku terus hehe",
-      "Love banyak ya, semoga bahagia selalu",
+      "More Birthdays to comeee Mahaaal <3",
+      "Sending lots of love, I hope you're always happy.",
     ];
   
     // Only apply random offsets on >= md screens so mobile stays neat
@@ -34,7 +34,7 @@ const Card2 = ({ onReturn }) => {
     const Bubble = ({ children, delay = 0, idx }) => (
       <div
         className={
-          "border-2 border-blue-900 rounded-2xl p-3 bg-pink-50 text-xs md:text-sm w-fit animate-fade-in break-words max-w-[80vw] md:max-w-[18rem]"
+          "border-2 border-pink-600 rounded-2xl p-3 bg-pink-100 text-xs md:text-sm w-fit animate-fade-in break-words max-w-[80vw] md:max-w-[18rem]"
         }
         style={{
           fontFamily: "Comic Relief, Aloja",
@@ -64,33 +64,22 @@ const Card2 = ({ onReturn }) => {
   
           {/* Center card */}
           <div
-            className="justify-self-center border-4 border-blue-900 rounded-3xl p-6 md:p-8 bg-pink-50 animate-fade-in w-full max-w-sm sm:max-w-md md:max-w-none"
+            className="justify-self-center border-4 border-pink-600 rounded-3xl p-6 md:p-8 bg-white animate-fade-in w-full max-w-sm sm:max-w-md md:max-w-none"
             style={{
               animationDelay: "0.2s",
               opacity: 0,
               animationFillMode: "forwards",
             }}
           >
-            <div className="text-center mb-6 md:mb-8">
+            <div className="text-center ">
               <img
-                src="/tulip.png"
+                src="https://media.tenor.com/hcI3W7YppHEAAAAm/flowers-glitter.webp"
                 alt="flower"
                 className="h-40 md:h-64 mx-auto w-auto select-none"
                 draggable={false}
               />
             </div>
-            <h2
-              className="text-2xl md:text-3xl font-bold mt-2 text-blue-900 text-center mb-2"
-              style={{ fontFamily: "Aloja" }}
-            >
-              FLOWER
-            </h2>
-            <p
-              className="text-sm md:text-base text-center"
-              style={{ fontFamily: "Comic Relief, Aloja" }}
-            >
-              your favorite flower warna pink kan hehe :3
-            </p>
+          
           </div>
   
           {/* Right bubbles (shown on md+) */}
@@ -117,7 +106,7 @@ const Card2 = ({ onReturn }) => {
         </div>
   
         <div
-          className="border-t-2 border-dashed border-blue-900 w-full max-w-4xl animate-fade-in"
+          className="border-t-2 border-dashed border-pink-600 w-full max-w-4xl animate-fade-in"
           style={{
             animationDelay: "2s",
             opacity: 0,
@@ -126,7 +115,7 @@ const Card2 = ({ onReturn }) => {
         />
   
         <h1
-          className="text-3xl md:text-4xl font-bold text-center text-blue-900 animate-fade-in"
+          className="text-3xl md:text-4xl font-bold text-center text-pink-500 animate-fade-in"
           style={{
             fontFamily: "Aloja",
             animationDelay: "2.2s",
@@ -139,7 +128,7 @@ const Card2 = ({ onReturn }) => {
   
         <button
           onClick={onReturn}
-          className="border-2 font-bold uppercase border-blue-900 bg-pink-100 hover:bg-pink-200 rounded-full px-6 md:px-8 py-3 text-sm transition-all hover:scale-105 animate-fade-in"
+          className="border-2 font-bold uppercase border-pink-600 text-pink-600 focus:outline-none bg-pink-100 hover:bg-pink-200 rounded-full px-6 md:px-8 py-3 text-sm transition-all hover:scale-105 animate-fade-in"
           style={{
             fontFamily: "Comic Relief, Aloja",
             animationDelay: "2.3s",

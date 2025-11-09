@@ -51,6 +51,17 @@ const Card1 = ({ onReturn }) => {
         >
           Captured Memories
         </h1>
+         <p
+            className="text-xs md:text-sm opacity-80 text-center px-4 animate-fade-in"
+            style={{
+            fontFamily: "Comic Relief, Aloja",
+            animationDelay: "1.3s",
+            opacity: 0,
+            animationFillMode: "forwards",
+            }}
+        >
+            {`More memories to come <3`}
+        </p>
         <button
           onClick={onReturn}
           className="border-2 font-bold text-pink-600 uppercase border-pink-600 bg-pink-100 focus:outline-none hover:bg-pink-200 rounded-full px-8 py-3 text-sm transition-all hover:scale-105 animate-fade-in"

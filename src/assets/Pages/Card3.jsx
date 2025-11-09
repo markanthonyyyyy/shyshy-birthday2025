@@ -13,7 +13,7 @@ const Card3 = ({ onReturn }) => {
             animationFillMode: "forwards",
           }}
         >
-          this song reminds me of you (◡‿◡✿)
+          HAPPY BIRTHDAY HAHAHAHAHAHAHA
         </p>
 
         <div
@@ -47,16 +47,16 @@ const Card3 = ({ onReturn }) => {
           }}
         >
           <p
-            className="text-blue-900 font-bold"
+            className="text-pink-600 font-bold"
             style={{ fontFamily: "Comic Relief" }}
           >
-            Love is an open door - Frozen
+            Wag ka mabilib ako lang to
           </p>
         </div>
       </div>
 
       <div
-        className="border-t-2 border-dashed border-blue-900 w-full max-w-4xl animate-fade-in"
+        className="border-t-2 border-dashed border-pink-600 w-full max-w-4xl animate-fade-in"
         style={{
           animationDelay: "0.8s",
           opacity: 0,
@@ -65,7 +65,7 @@ const Card3 = ({ onReturn }) => {
       ></div>
 
       <h1
-        className="text-3xl md:text-4xl font-bold text-center text-blue-900 animate-fade-in"
+        className="text-3xl md:text-4xl font-bold text-center text-pink-500 animate-fade-in"
         style={{
           fontFamily: "Aloja",
           animationDelay: "1s",
@@ -73,12 +73,12 @@ const Card3 = ({ onReturn }) => {
           animationFillMode: "forwards",
         }}
       >
-        Song about you
+        Special Song Number
       </h1>
 
       <button
         onClick={onReturn}
-        className="border-2 font-bold uppercase border-blue-900 bg-pink-100 hover:bg-pink-200 rounded-full px-8 py-3 text-sm transition-all hover:scale-105 animate-fade-in"
+        className="border-2 font-bold uppercase border-pink-600 text-pink-600 focus:outline-none bg-pink-100 hover:bg-pink-200 rounded-full px-8 py-3 text-sm transition-all hover:scale-105 animate-fade-in"
         style={{
           fontFamily: "Comic Relief, Aloja",
           animationDelay: "1.2s",
