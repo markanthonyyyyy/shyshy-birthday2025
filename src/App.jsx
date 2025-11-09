@@ -129,7 +129,7 @@ function App() {
   return (
     <div className="flex items-center justify-center min-h-screen w-full background-paper">
       {renderView()}
-      <audio ref={audioRef} src="/song.mp3" preload="auto" loop />
+      {/* <audio ref={audioRef} src="/song.mp3" preload="auto" loop /> */}
     </div>
   );
 }
