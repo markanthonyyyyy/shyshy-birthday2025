@@ -4,7 +4,7 @@ const Card1 = ({ onReturn }) => {
   return (
     <div className="min-h-screen w-full flex flex-col items-center justify-center  p-4 overflow-hidden">
       <div
-        className="md:max-w-4xl w-full animate-fade-in overflow-y-auto overflow-x-hidden max-h-[60vh] no-scrollbar"
+        className="md:max-w-4xl w-full flex items-center justify-center animate-fade-in overflow-y-auto overflow-x-hidden max-h-[60vh] no-scrollbar"
         style={{
           animationDelay: "0.2s",
           opacity: 0,
@@ -15,7 +15,7 @@ const Card1 = ({ onReturn }) => {
             {[1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12].map((i) => (
               <div
                 key={i}
-                className="border-4 border-pink-600 rounded-2xl p-4 bg-gradient-to-b from-pink-200 to-pink-400 aspect-square transform hover:rotate-2 transition-all animate-fade-in"
+                className="border-4 border-pink-600 rounded-2xl p-4 bg-gradient-to-b from-pink-200 to-pink-400 max-w-64 max-h-64  transform hover:rotate-2 transition-all animate-fade-in"
                 style={{
                   animationDelay: `${0.3 + i * 0.1}s`,
                   opacity: 0,
