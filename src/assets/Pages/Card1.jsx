@@ -4,7 +4,7 @@ const Card1 = ({ onReturn }) => {
   return (
     <div className="min-h-screen w-full flex flex-col items-center justify-center  p-4 overflow-hidden">
       <div
-        className="md:max-w-4xl w-full animate-fade-in overflow-auto max-h-[60vh] no-scrollbar"
+        className="md:max-w-4xl w-full animate-fade-in overflow-y-auto overflow-x-hidden max-h-[60vh] no-scrollbar"
         style={{
           animationDelay: "0.2s",
           opacity: 0,
