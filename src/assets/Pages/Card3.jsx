@@ -1,4 +1,5 @@
 import React from 'react'
+import VideoPlayer from '../Components/VideoPlayer';
 
 const Card3 = ({ onReturn }) => {
   return (
@@ -17,25 +18,14 @@ const Card3 = ({ onReturn }) => {
         </p>
 
         <div
-          className="border-4 border-blue-900 rounded-3xl p-4 bg-gray-900 animate-fade-in"
+          className="border-4 border-pink-600 rounded-3xl p-4 bg-pink-900 animate-fade-in"
           style={{
             animationDelay: "0.4s",
             opacity: 0,
             animationFillMode: "forwards",
           }}
         >
-          <iframe
-            className="w-full aspect-video rounded-lg"
-            src="https://www.youtube.com/embed/kQDw88hEr2c?si=-bCibe7XpKxE6qWC&enablejsapi=1"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-            onLoad={(e) => {
-              // Detect when video plays
-              e.target.contentWindow.postMessage('{"event":"listening"}', "*");
-            }}
-          ></iframe>
+          <VideoPlayer/>
         </div>
 
         <div
@@ -73,7 +63,7 @@ const Card3 = ({ onReturn }) => {
           animationFillMode: "forwards",
         }}
       >
-        Special Song Number
+        Song For You
       </h1>
 
       <button
