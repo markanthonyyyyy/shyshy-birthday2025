@@ -2,9 +2,9 @@ import React from 'react'
 
 const Card1 = ({ onReturn }) => {
   return (
-    <div className="min-h-screen w-full flex flex-col items-center justify-center gap-8 p-4">
+    <div className="min-h-screen w-full flex flex-col items-center justify-center  p-4 overflow-hidden">
       <div
-        className="md:max-w-4xl w-full animate-fade-in"
+        className="md:max-w-4xl w-full animate-fade-in overflow-auto max-h-[60vh] no-scrollbar"
         style={{
           animationDelay: "0.2s",
           opacity: 0,
@@ -31,39 +31,39 @@ const Card1 = ({ onReturn }) => {
             ))}
         </div>
       </div>
-
-      <div
-        className="border-t-2 border-dashed border-pink-600 w-full max-w-4xl animate-fade-in"
-        style={{
-          animationDelay: "1s",
-          opacity: 0,
-          animationFillMode: "forwards",
-        }}
-      ></div>
-      <h1
-        className="text-3xl md:text-4xl font-bold text-center text-pink-500 animate-fade-in"
-        style={{
-          fontFamily: "Aloja",
-          animationDelay: "1.3s",
-          opacity: 0,
-          animationFillMode: "forwards",
-        }}
-      >
-        Captured Memories
-      </h1>
-
-      <button
-        onClick={onReturn}
-        className="border-2 font-bold text-pink-600 uppercase border-pink-600 bg-pink-100 focus:outline-none hover:bg-pink-200 rounded-full px-8 py-3 text-sm transition-all hover:scale-105 animate-fade-in"
-        style={{
-          fontFamily: "Comic Relief, Aloja",
-          animationDelay: "1.4s",
-          opacity: 0,
-          animationFillMode: "forwards",
-        }}
-      >
-        Return
-      </button>
+      <div className='w-full animate-fade-in flex flex-col items-center space-y-4 mt-10'>
+          <div
+            className="border-t-2 border-dashed border-pink-600 w-full max-w-4xl animate-fade-in"
+            style={{
+              animationDelay: "1s",
+              opacity: 0,
+              animationFillMode: "forwards",
+            }}
+          />
+        <h1
+          className="text-3xl md:text-4xl font-bold text-center text-pink-500 animate-fade-in"
+          style={{
+            fontFamily: "Aloja",
+            animationDelay: "1.3s",
+            opacity: 0,
+            animationFillMode: "forwards",
+          }}
+        >
+          Captured Memories
+        </h1>
+        <button
+          onClick={onReturn}
+          className="border-2 font-bold text-pink-600 uppercase border-pink-600 bg-pink-100 focus:outline-none hover:bg-pink-200 rounded-full px-8 py-3 text-sm transition-all hover:scale-105 animate-fade-in"
+          style={{
+            fontFamily: "Comic Relief, Aloja",
+            animationDelay: "1.4s",
+            opacity: 0,
+            animationFillMode: "forwards",
+          }}
+        >
+          Return
+        </button>
+      </div>
     </div>
   );
 }
